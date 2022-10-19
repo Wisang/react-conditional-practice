@@ -7,7 +7,7 @@ function Form() {
     <form className="form">
       <Input type="text" placeholder="Username" />
       <Input type="password" placeholder="Password" />
-      {userIsRegistered ? null : <Input type="password" placeholder="Confirm Password" />}
+      {!userIsRegistered && <Input type="password" placeholder="Confirm Password" />}
       <button type="submit">Register</button>
     </form>
   );
