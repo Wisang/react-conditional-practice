@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "./Form";
 
-var userIsRegistered = false;
+var userIsRegistered = true;
 
 function App() {
   return (
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export {App, userIsRegistered};
