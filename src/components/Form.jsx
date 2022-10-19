@@ -8,7 +8,7 @@ function Form() {
       <Input type="text" placeholder="Username" />
       <Input type="password" placeholder="Password" />
       {!userIsRegistered && <Input type="password" placeholder="Confirm Password" />}
-      <button type="submit">Register</button>
+      <button type="submit">{userIsRegistered ? "login" : "Register"}</button>
     </form>
   );
 }
